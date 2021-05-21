@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(161, 250, 28);
+}
+
+.play-button {
+    padding: 3.5px 14px;
+    margin-top: 1.2em;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 40px rgb(255, 255, 255), 0px 0px 80px rgb(255, 255, 255);
+    background-color: white;
+}
+
+.container h1 {
+    margin: 0px;
+}
+
+.container h2 {
+    margin: 0px;
+}
+
+.numbers-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 2%;
+    max-width: 270px;
+}
+
+.random-numbers {
+    margin: 3px;
+    border: rgb(161, 250, 28) solid 2px;
+    box-shadow: 0px 2px 7px greenyellow;
+    border-radius: 50%;
+    padding: 7px 30px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: rgb(203, 251, 129);
+}
+
+.random-numbers p {
+    margin: 0px;
+}
+
+#buton {
+    cursor: pointer;
+    margin: 0px;
+    color: black;
+}
+
+.win {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6em;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 3px;
+    color: rgb(230, 193, 230);
+    max-width: 270px;
+}
+
+.win h3 {
+    font-size: 2.5rem;
+    box-shadow: 0px 0px 10px violet;
+    padding: 0 0.1em;
+}
+
+.container h1,
+h2 {
+    text-shadow: 0px 2px 7px rgb(161, 250, 28), 0px 15px 26px rgb(161, 250, 28);
+}
+
+.guessedNmb {
+    margin: 3px;
+    border: transparent solid 2px;
+    box-shadow: 0px 2px 7px violet, 0px 2px 8px violet;
+    border-radius: 4em;
+    padding: 2px 20px;
+}
+
+.guessedNmb p {
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.lose {
+    text-align: center;
+}
+
+.lose p {
+    color: rgb(255, 81, 81);
+    font-size: 2.5rem;
+    box-shadow: 0px 0px 10px rgb(250, 3, 3);
+}
+
+img {
+    max-width: 150px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 7px rgb(38, 169, 255), 0px 0px 10px rgb(38, 169, 255), 0px 0px 13px rgb(38, 169, 255);
+    border-radius: 0.2em;
+    border: rgb(38, 169, 255) solid 1px;
+}
+
+.rewrite {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+@media (min-width:500px) {
+    .container {
+        margin-top: 5%;
+    }
+    .numbers-box {
+        max-width: 470px;
+        padding: 1%;
+    }
+    .win {
+        max-width: 300px;
+    }
+}
+
+@media (min-width:700px) {
+    .numbers-box {
+        max-width: 600px;
+    }
+    .win {
+        min-width: 500px;
+    }
+}
