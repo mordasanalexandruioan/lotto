@@ -51,7 +51,7 @@ body::after {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    padding: 2%;
+    padding: 1%;
     max-width: 270px;
 }
 
@@ -155,7 +155,7 @@ img {
     }
     .numbers-box {
         max-width: 470px;
-        padding: 1%;
+        padding: 0.5%;
         max-width: 630px;
     }
     .random-numbers {
