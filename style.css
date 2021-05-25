@@ -7,7 +7,23 @@ body {
     margin: 0px;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
+    min-height: 100vh;
     background-color: black;
+}
+
+body::after {
+    content: "";
+    background: url(svg/lottery-balls.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .container {
@@ -17,21 +33,16 @@ body {
     flex-wrap: wrap;
     align-items: center;
     color: rgb(161, 250, 28);
+    height: 100vh;
+    margin: 0px;
 }
 
 .play-button {
     padding: 3.5px 14px;
-    margin-top: 1.2em;
     box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 40px rgb(255, 255, 255), 0px 0px 80px rgb(255, 255, 255);
     background-color: white;
-}
-
-.container h1 {
-    margin: 0px;
-}
-
-.container h2 {
-    margin: 0px;
+    max-width: 200px;
+    margin: 1.8em auto;
 }
 
 .numbers-box {
@@ -46,13 +57,13 @@ body {
 
 .random-numbers {
     margin: 3px;
-    border: rgb(161, 250, 28) solid 2px;
-    box-shadow: 0px 2px 7px greenyellow;
+    border: rgb(0, 120, 122) solid 2px;
+    box-shadow: 0px 2px 7px rgb(0, 120, 122);
     border-radius: 50%;
     padding: 7px 30px;
     font-size: 2rem;
     background-color: transparent;
-    color: rgb(203, 251, 129);
+    color: rgb(148, 235, 216);
 }
 
 .random-numbers p {
@@ -75,25 +86,26 @@ body {
     margin: 0 auto;
     margin-top: 40px;
     padding: 3px;
-    color: rgb(230, 193, 230);
+    color: rgb(8, 235, 113);
     max-width: 270px;
 }
 
 .win h3 {
     font-size: 2.5rem;
-    box-shadow: 0px 0px 10px violet;
+    box-shadow: 0px 0px 10px rgb(0, 179, 73);
     padding: 0 0.1em;
 }
 
 .container h1,
 h2 {
-    text-shadow: 0px 2px 7px rgb(161, 250, 28), 0px 15px 26px rgb(161, 250, 28);
+    text-shadow: 0px 2px 7px rgb(5, 233, 111), 0px 15px 26px rgb(5, 233, 111);
+    margin: 0px;
 }
 
 .guessedNmb {
     margin: 3px;
     border: transparent solid 2px;
-    box-shadow: 0px 2px 7px violet, 0px 2px 8px violet;
+    box-shadow: 0px 2px 7px rgb(148, 235, 216), 0px 2px 8px rgb(148, 235, 216);
     border-radius: 4em;
     padding: 2px 20px;
 }
@@ -123,30 +135,41 @@ img {
 
 .rewrite {
     text-align: center;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.rewrite h2 {
+    text-shadow: rgb(255, 255, 255) 0px 2px 0px, red 0px 3px 0px;
 }
 
 .intro {
     text-align: center;
+    color: rgb(8, 235, 113);
 }
 
 @media (min-width:500px) {
-    .container {
-        margin-top: 5%;
+    .container h1,
+    h2 {
+        font-size: 5rem;
     }
     .numbers-box {
         max-width: 470px;
         padding: 1%;
+        max-width: 630px;
+    }
+    .random-numbers {
+        font-size: 2.6rem;
     }
     .win {
         max-width: 300px;
     }
-}
-
-@media (min-width:700px) {
-    .numbers-box {
-        max-width: 600px;
+    .win h3 {
+        font-size: 3rem;
     }
-    .win {
-        min-width: 500px;
+    .rewrite h2 {
+        font-size: 2.7rem;
+        max-width: 803px;
+        margin: -150px auto;
     }
 }
